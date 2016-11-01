@@ -21,7 +21,7 @@ public class SeleniumPocTest {
     public void firstTest() throws Exception {
 
 
-             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),DesiredCapabilities.firefox());
+             driver = new RemoteWebDriver(new URL("http://selenium-hub.default.svc.appfactory.local:4444/wd/hub"),DesiredCapabilities.firefox());
             driver.get("http://www.google.nl");
 
             assertEquals(driver.getTitle(),"Google");
@@ -34,7 +34,7 @@ public class SeleniumPocTest {
     public void chromeTest() throws Exception {
 
 
-         driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),DesiredCapabilities.chrome());
+         driver = new RemoteWebDriver(new URL("http://selenium-hub.default.svc.appfactory.local:4444/wd/hub"),DesiredCapabilities.chrome());
         driver.get("http://www.google.nl");
 
         assertEquals(driver.getTitle(),"Google");
@@ -47,7 +47,7 @@ public class SeleniumPocTest {
     public void foutTest() throws Exception {
 
 
-        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),DesiredCapabilities.chrome());
+        driver = new RemoteWebDriver(new URL("http://selenium-hub.default.svc.appfactory.local:4444/wd/hub"),DesiredCapabilities.chrome());
         driver.get("http://www.google.nl");
 
         assertEquals(driver.getTitle(),"Googly");
