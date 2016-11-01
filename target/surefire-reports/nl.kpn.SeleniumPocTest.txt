@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: nl.kpn.SeleniumPocTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.44 sec <<< FAILURE! - in nl.kpn.SeleniumPocTest
+foutTest(nl.kpn.SeleniumPocTest)  Time elapsed: 2.804 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Googl[e]> but was:<Googl[y]>
+	at nl.kpn.SeleniumPocTest.foutTest(SeleniumPocTest.java:53)
+
