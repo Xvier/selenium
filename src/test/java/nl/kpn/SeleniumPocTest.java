@@ -50,8 +50,8 @@ public class SeleniumPocTest {
         driver = new RemoteWebDriver(new URL("http://selenium-hub.default.svc.appfactory.local:4444/wd/hub"),DesiredCapabilities.chrome());
         driver.get("http://www.google.nl");
 
-        assertEquals(driver.getTitle(),"Googly");
-
+        assertEquals(driver.getTitle(),"Google");
+        System.out.println("nothing");
         driver.close();
         driver.quit();
 
