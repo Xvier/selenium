@@ -2,13 +2,6 @@
     <proxies>
         <proxy>
             <active>true</active>
-            <protocol>http</protocol>
-            <host>proxy.kpn-is.nl</host>
-            <port>8080</port>
-            <nonProxyHosts>localhost</nonProxyHosts>
-        </proxy>
-        <proxy>
-            <active>true</active>
             <protocol>https</protocol>
             <host>proxy.kpn-is.nl</host>
             <port>8080</port>
