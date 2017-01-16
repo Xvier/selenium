@@ -15,9 +15,9 @@ import java.net.URL;
  * Created by xviuda on 01-11-16.
  */
 public class SeleniumPocTest {
-    WebDriver driver;
+   private WebDriver driver;
 
-    @Test
+ /*   @Test
     public void firstTest() throws Exception {
 
 
@@ -28,13 +28,13 @@ public class SeleniumPocTest {
             driver.close();
             driver.quit();
 
-    }
+    }*/
 
     @Test
     public void chromeTest() throws Exception {
 
 
-         driver = new RemoteWebDriver(new URL("http://selenium-hub.default.svc.appfactory.local:4444/wd/hub"),DesiredCapabilities.chrome());
+         driver = new RemoteWebDriver(new URL("http://selenium-hub.service.consul:4444/wd/hub"),DesiredCapabilities.chrome());
         driver.get("http://www.google.nl");
 
         assertEquals(driver.getTitle(),"Google");
@@ -47,7 +47,7 @@ public class SeleniumPocTest {
     public void foutTest() throws Exception {
 
 
-        driver = new RemoteWebDriver(new URL("http://selenium-hub.default.svc.appfactory.local:4444/wd/hub"),DesiredCapabilities.chrome());
+        driver = new RemoteWebDriver(new URL("http://selenium-hub.service.consul:4444/wd/hub"),DesiredCapabilities.chrome());
         driver.get("http://www.google.nl");
 
         assertEquals(driver.getTitle(),"Google");
